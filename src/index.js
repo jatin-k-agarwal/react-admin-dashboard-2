@@ -5,8 +5,11 @@ import './index.css';
 import { ThemeProvider } from './context/ThemeContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
-  <ThemeProvider>
-    <App />
-  </ThemeProvider>
+  <React.StrictMode>
+    <ThemeProvider>
+      <App />
+    </ThemeProvider>
+  </React.StrictMode>
 );
